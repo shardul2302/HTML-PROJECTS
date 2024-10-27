@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Feedback Survey</title>
+  </head>
+
+  <body>
+    <h1>Event Feedback Survey</h1>
+    <form action="submit-event-feedback" method="post">
+       
+       <label for="eventname">Event Name:</label> <br>
+       <input type="text" required  id="eventname" name="eventname">
+<br>       <label for="yourname">Your Name:</label><br>
+<input type="text" required id="yourname" name="yourname">
+      <br /><br />
+
+      <label for="rating">Overall Rating:</label><br />
+      <select name="rating" id="rating">
+        <option value="Excellent">Excellent</option>
+        <option value="Good">Good</option>
+        <option value="Average"> Average</option>
+        <option value="Poor">Poor</option>
+        <option value="Very Poor">Very Poor</option>
+        
+      </select>
+
+       <br /><br />
+
+      <label>Would you recommend this event to others?</label><br /> 
+      <input type="radio"  id="yesradio" name="yesradio" required >
+      <label for="yesradio">Yes</label> <br>
+      <input type="radio"  id="noradio" name="yesradio" required>
+      <label for="noradio"> No</label> 
+       
+       
+      <br /><br />
+
+      <label for="comments">Additional Comments:</label><br />
+      <textarea id="comments" name="comments" rows="4" cols="50"></textarea
+      ><br /><br />
+      <label for="submitbutton"></label>
+      <input type="submit" name="submitbutton" id="submitbutton">
+    </form>
+
+    <hr />
+
+    <h1>Employee Satisfaction Survey</h1>
+    <form action="submit-employee-survey" method="post">
+        <label for="EmployeeName">Employee Name : </label> <br>
+        <input type="text" required  id="EmployeeName" name="EmployeeName">
+        
+      <br /><br />
+
+      <label for="department">Department:</label><br />
+      <input type="text" name="department" id="department" required >
+      <br /><br />
+
+      <label for="">How satisfied are you with your job?</label><br>
+      
+      <input type="radio"  id="1radio" name="job_satisfaction" required value="Very Satisfied">
+      <label for="1radio">Very Satisfied</label> <br>
+      <input type="radio"  id="2radio" name="job_satisfaction" required value="Satisfied">
+      <label for="2radio">Satisfied</label> <br>
+      <input type="radio"  id="3radio" name="job_satisfaction" required value="Neutral">
+      <label for="3radio">Neutral</label> <br>
+      <input type="radio"  id="4radio" name="job_satisfaction"required value="Dissatisfied">
+      <label for="4radio">Dissatisfied</label> <br>
+      <input type="radio"  id="5radio" name="job_satisfaction"required value="Very Dissatisfied">
+      <label for="5radio"> Very Dissatisfied</label> <br>
+      
+      
+ 
+   
+      <br />
+
+      <label for="work-environment"
+        >How would you rate the work environment?</label
+      ><br />
+      <select id="work-environment" name="work_environment" required>
+        
+        <option value="Excellent">Excellent</option>
+        <option value="Good">Good</option>
+        <option value="Average">Average</option>
+        <option value="Poor">Poor</option>
+        
+        </select>
+      <br /><br />
+
+      <label for="suggestions">Suggestions for Improvement:</label><br />
+      <textarea id="suggestions" name="suggestions" rows="4" cols="50"></textarea
+        ><br />
+      
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

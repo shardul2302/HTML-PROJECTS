@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shardul</title>
+</head>
+<body>
+    <h1>
+        Website Design Questionnaire 
+    </h1>
+    <p>Please fill out this questionnaire to help us better understand your project requirements.</p>
+     
+    <form action="submit.php" id="formid" method="post"></form>
+    <h2>General Information</h2>
+     <label for="fullnames">Name:</label>
+     <input type="text" id="fullnames" name="fullnames" required><br>
+     <label for="emailname">Email:</label>
+     <input type="email" name="emailname" id="emailname" required><br>
+     <label for="companyname">Company:</label>
+     <input type="text" id="companyname" name="companyname" required>
+
+     <h2>Project Details</h2>
+     <label for="projecttype">Project Type:</label>
+     <select name="projecttype" id="projecttype">
+              <option value="none">Select Project Type</option>
+              <option value="website">Website</option>
+              <option value="webapplication">Web Application </option>
+              <option value="E-commerce">E-Commerce</option>
+              <option value="others">others</option>
+              
+     </select>
+     <br>
+     <label for="projectdesription">Project Description: </label>
+             <textarea name="projectdesription" id="projectdesription"></textarea><br>
+             <label for="TargetAudience">Target Audience :</label>
+             <input type="text" id="TargetAudience" name="TargetAudience" required>
+    <h2>Design Preferences</h2>
+             <label for="colour">Color Scheme:</label>
+             <input type="text" id="colour" name="colour" required><br>
+             <label for="Font">Font Preferences: </label>
+             <input type="text" name="Font" id="Font" required><br>
+             <label for="Style">Style Preferences:</label>
+             <input type="text" id="Style" name="Style" required>
+    <h2>Additional Information</h2>
+
+    <label for="budget">Budget:</label>
+    <input type="number" required id="budget" name="budget"><br>
+    <label for="time">Timeline:</label>
+    <input type="text" id="time" name="time" required ><br>
+    <label for="addnote">Additional Notes: </label>
+    <textarea name="addnote" id="addnote"></textarea><br> 
+ <button type="submit"> Submit Questionnaire</button>
+<p> &#169; 2023 Questionnaire. All rights reserved. </p>
+
+
+</body>
+</html>
